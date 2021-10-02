@@ -22,6 +22,13 @@ export class FavCard extends Component {
                   >
                     delete item
                   </Button>
+                  <Button
+                    onClick={(e) => {
+                      this.props.showupdateform(obj.title, obj.slug);
+                    }}
+                  >
+                    update
+                  </Button>
                 </Card.Body>
               </Card>
             </>
